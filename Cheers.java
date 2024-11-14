@@ -21,7 +21,7 @@ public class Cheers {
         }
         System.out.println((String)"What does that spell?");
         for (int i = 0; i < times; i ++){
-                System.out.println(word + " ! ! !");
+                System.out.println(word + "!!!");
         }
                 // {'A', 'E', 'F', 'H', 'I', 'L', 'M', 'N', 'O', 'R','S', 'X'}
                 // java Cheers.java RUNI 5
