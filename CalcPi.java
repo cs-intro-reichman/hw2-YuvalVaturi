@@ -20,7 +20,7 @@ public class CalcPi {
 		}
 
 		System.out.println("pi according to Java: " + JavaPI);
-		System.out.println("pi, approximated: " + 4*appPi);
+		System.out.println("pi, approximated:     " + 4*appPi);
 
 		// java CalcPi.java 1000
 		// java CalcPi.java 10
