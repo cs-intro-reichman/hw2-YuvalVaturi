@@ -5,19 +5,20 @@ public class CalcPi {
 		double JavaPI = Math.PI;
 		double appPi = 1;
 		double term = (double) 1/3;
-		System.out.println(term);
+		
 		//calculating new pi
 		for (int i = 0; i < NofTerms; i++){
-			if (i == 0) {
-				appPi =- term;
-			}
-			else if (i/2 != 0) {
-				appPi =- term;
+			
+			if (i/2 == 0) {
+				appPi =+ term;
+				System.out.println("zogi:" + appPi);
 			}
 			else {
-				appPi =+ term;
+				appPi =- term;
+				System.out.println("ezogi:" + appPi);
 			}
 			term = (double) (term * (double) 1/2);
+			System.out.println("term:" + term);
 		}
 
 		System.out.println("pi according to Java: " + JavaPI);

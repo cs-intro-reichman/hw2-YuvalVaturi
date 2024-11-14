@@ -20,9 +20,9 @@ public class Cheers {
 
         }
         System.out.println((String)"What does that spell?");
-        if (times == 0){
-                System.out.println(word + "!!!");
-        }
+        // if (times == 0){
+        //         System.out.println(word + "!!!");
+        // }
         for (int i = 0; i < times; i ++){
                 System.out.println(word + "!!!");
         }
