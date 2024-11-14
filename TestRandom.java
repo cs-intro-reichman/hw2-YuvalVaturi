@@ -17,12 +17,21 @@ public  class  TestRandom {
 				sCount ++;
 			}
 		}
-		 double Ratio = (float) lCount / sCount;
 
+		if (sCount == 0){
+			System.out.println((String)"There are no numbers below 0.5");
+		}
+		else if (lCount == 0){
+			System.out.println((String) "There are no numbers above 0.5");
+		}
+
+		else  {
+			double Ratio = (float) lCount / sCount;
+			System.out.println(Ratio);
+		}
 		// System.out.println(times + "," + sCount + "," + lCount);
-		System.out.println(Ratio);
-
 		// java TestRandom.java 100
+		// java TestRandom.java 3
 
 	}
 }
