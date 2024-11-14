@@ -11,17 +11,12 @@ public class CalcPi {
 		for (int i = 3; i < (NofTerms+2); i++){
 			term = (double) 1/(n);
 			if (i%2 == 0) {
-				System.out.println(term);
 				appPi = appPi + term;
-				System.out.println("value of appPi ++ " +appPi);
 			}
 			else {
-				System.out.println(term);
 				appPi = appPi - term;
-				System.out.println("value of appPi -- " +appPi);
 			}
 			n = n + 2;
-			System.out.println("value of n" + n);
 		}
 
 		System.out.println("pi according to Java: " + JavaPI);
