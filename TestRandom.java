@@ -17,12 +17,12 @@ public  class  TestRandom {
 				sCount ++;
 			}
 		}
-		 double Ratio = lCount%sCount;
+		 double Ratio = (float) lCount / sCount;
 
 		// System.out.println(times + "," + sCount + "," + lCount);
 		System.out.println(Ratio);
 
-		
+		// java TestRandom.java 100
 
 	}
 }

@@ -12,7 +12,7 @@ public class TimeCalc {
         hours = hours + NewHours;
         minutes = minutes + NewMinutes;
 
-        if (minutes > 60) {
+        if (minutes >= 60) {
             minutes = minutes % 60;
             hours = hours + 1;
         }
