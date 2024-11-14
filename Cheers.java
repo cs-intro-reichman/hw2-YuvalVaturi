@@ -14,7 +14,7 @@ public class Cheers {
                         aan = "an";
                 }
                 else {
-                       aan = "a    "; 
+                       aan = "a "; 
                 }
                 System.out.println((String)"Give me " + aan + " " + word.charAt(i) + ": " + word.charAt(i) + "!");
 
