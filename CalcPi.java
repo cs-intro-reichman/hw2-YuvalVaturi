@@ -4,26 +4,28 @@ public class CalcPi {
 	    int NofTerms = Integer.parseInt(args[0]);
 		double JavaPI = Math.PI;
 		double appPi = 1;
-		double term = (double) 1/3;
+		double n = 3;
+		double term;
 		
 		//calculating new pi
-		for (int i = 0; i < NofTerms; i++){
-			
-			if (i/2 == 0) {
-				appPi =+ term;
-				System.out.println("zogi:" + appPi);
+		for (int i = 3; i < (NofTerms+2); i++){
+			term = (double) 1/(n);
+			if (i%2 == 0) {
+				System.out.println(term);
+				appPi = appPi + term;
+				System.out.println("value of appPi ++ " +appPi);
 			}
 			else {
-				appPi =- term;
-				System.out.println("ezogi:" + appPi);
+				System.out.println(term);
+				appPi = appPi - term;
+				System.out.println("value of appPi -- " +appPi);
 			}
-			term = (double) (term * (double) 1/2);
-			System.out.println("term:" + term);
+			n = n + 2;
+			System.out.println("value of n" + n);
 		}
 
 		System.out.println("pi according to Java: " + JavaPI);
 		System.out.println("pi, approximated: " + 4*appPi);
-
 
 		// java CalcPi.java 1000
 		// java CalcPi.java 10
