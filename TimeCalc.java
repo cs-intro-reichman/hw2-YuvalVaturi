@@ -30,7 +30,7 @@ public class TimeCalc {
 			fhours = "0" + hours;
 		}
 		else {
-			fhours = String.valueOf(minutes);
+			fhours = String.valueOf(hours);
 		}
     
         String fminutes;
@@ -46,5 +46,6 @@ public class TimeCalc {
 // java TimeCalc.java 22:07 12345
 // java TimeCalc.java 23:59 10
 // java TimeCalc.java 10:30 4055
+// java TimeCalc.java 07:31, 242
     }
 }
