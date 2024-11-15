@@ -8,27 +8,32 @@ public class Collatz {
 		int N = Integer.parseInt(args[0]);
 		String vc = args[1];
 		int num = 0;
-		for (int i = 1; i < N + 1; i++) {
+		int steps = 0;
+		for (int seed = 1; seed <= N; seed++) {
 			while (num != 1){
 				
 				if (num == 0){
 					num = 1;
 				}
 				if (vc.equals("v")) {
-					System.out.println(num);
+					System.out.print(num + " ");
 				}
 				if (num % 2 == 0) {
 					num = num /2;
 				}
 				else {
-					num = num*3 + 1;
+					num = num * 3 + 1;
 				}
+				steps ++;
 				
 			}
+			steps ++;
+
 			if (vc.equals("v")) {
-				System.out.println("("+ N +")");
+				System.out.println(num + " ("+ steps +")");
 			}
-			num = i + 1;
+			steps = 0;
+			num = seed + 1;
 		}
 		System.out.println((String)"Every one of the first " + N + " hailstone sequences reached 1.");
 	}
