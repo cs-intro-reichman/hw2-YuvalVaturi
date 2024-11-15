@@ -8,7 +8,7 @@ public  class  TestRandom {
 		int sCount = 0; 
 		int lCount = 0;
 		double random;
-		for (int i = times; i > 0; i--) {
+		for (int i = 0; i < times; i--) {
 			random = Math.random();
 			if (random > 0.5) {
 				lCount ++;
